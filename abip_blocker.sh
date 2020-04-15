@@ -91,14 +91,3 @@ done;
 echo -e "\n[*]Script Finished $(date -u)"
     
 exit 0    
-
-
-counter=0
-while [ $counter -le 4 ]; do 
- sleep .2;
- netstat -nt
- counter=$((counter +1))
- echo 'test';
-done;
-
-exit 0;
